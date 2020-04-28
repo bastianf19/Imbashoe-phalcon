@@ -45,6 +45,8 @@
 ## Menambah Produk
 ### Admin dapat menambahkan produk baru ke dalam aplikasi
 ![tambahProduk](/screenshot/tambah.jpg)
+### Jika berhasil, maka tampilannya:
+![tambahProdukSuccess](/screenshot/tambahProdukSuccess.jpg)
 
 ## Melihat Daftar Produk
 ### Admin dapat melihat seluruh produk yang tersedia di dalam aplikasi
