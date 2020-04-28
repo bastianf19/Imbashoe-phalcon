@@ -1,5 +1,7 @@
 <img src="https://raw.githubusercontent.com/bastianf19/Imbashoe-phalcon/master/public/img/logo.png">
 
+### [Untuk demo & penjelasan code (youtube)](https://www.youtube.com/watch?v=e4qYYHRgst8)
+
 ## Login
 ### User (admin) dapat melakukan login
 ![login](/screenshot/signIn.jpg)
