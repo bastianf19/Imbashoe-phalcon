@@ -159,7 +159,7 @@
                         <div class="alert alert-<?php echo $success === true ? 'success' : 'danger'; ?>">
                             <?php echo $message; ?>
                         </div>
-                        <a href="<?= $this->url->get('/') ?>" class="btn btn-lg btn-primary btn-block text-uppercase"
+                        <a href="<?= $this->url->get('/menu') ?>" class="btn btn-lg btn-primary btn-block text-uppercase"
                             role="button">Home</a>
                     </div>
                 </div>

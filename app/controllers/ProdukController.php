@@ -83,8 +83,8 @@ class ProdukController extends ControllerBase
 
     public function hapusAction($id_produk)
     {
-        $produk = new Produk();
         $prod = Produk::findFirstByid_produk($id_produk);
+        unlink($prod->foto_produk);
         $success = $prod->delete();
         $this->view->success = $success;
 
@@ -97,7 +97,6 @@ class ProdukController extends ControllerBase
     }
     public function updateAction($id_produk)
     {
-        $produk = new Produk();
         $valid = new ProdukValidation();
         $message = $valid->validate($_POST);
         if(!count($message))
@@ -117,7 +116,8 @@ class ProdukController extends ControllerBase
             {
                 $img = $this->request->getUploadedFiles()[0];
                 $path = 'img/'.$img->getName();
-                $produk->foto_produk = $path;
+                unlink($prod->foto_produk);
+                $prod->foto_produk = $path;
                 $img->moveTo($path);
             }
             // Store and check for errors
