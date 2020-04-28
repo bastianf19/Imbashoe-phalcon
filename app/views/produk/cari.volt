@@ -160,6 +160,7 @@
                             <thead class="thead-light">
                                 <tr>
                                     <th>ID Produk</th>
+                                    <th>Foto Produk</th>
                                     <th>Nama Produk</th>
                                     <th>Brand Produk</th>
                                     <th>Deskripsi Produk</th>
@@ -171,6 +172,7 @@
                                 {% for prod in cari %}
                                 <tr>
                                     <td>{{ prod.id_produk }}</td>
+                                    <td><img src='{{url(prod.foto_produk)}}' class="mx-auto d-block" width="100" height="100"></td>
                                     <td>{{ prod.nama_produk }}</td>
                                     <td>{{ prod.brand_produk }}</td>
                                     <td>{{ prod.deskripsi_produk }}</td>
